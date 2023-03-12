@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0a6cf1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    border: 1px solid #000;
+    width: 50%;
+    min-width: 450px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 35px;
+}
+
+.container *{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.getValue{
+    margin-bottom: 30px;
+    padding: 40px;
+    background: #000;
+    border-radius: 8px;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.5);
+}
+
+.getValue input[type = "date"] {
+    width: 60%;
+    height: 60px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    outline: none;
+}
+
+.getValue button{
+    width: 30%;
+    height: 60px;
+    float: right;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 20px;
+    font-weight: 500;
+    outline: none;
+}
+
+.getValue input[type = "date"]:hover,
+.getValue button:hover {
+    cursor: pointer;
+}
+
+.date-details{
+    display: flex;
+    justify-content: space-around;
+}
+
+.date-details .box {
+    width: 100px;
+    height: 100px;
+    background: #080808;
+    color: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.5);
+}
+
+.date-details .box p {
+    font-weight: 400;
+    font-size: 14px;
+    color: #707070;
+    margin-top: 25px;
+}
+
+.date-details .box span {
+    font-size: 30px;
+    font-weight: 400;
+}
